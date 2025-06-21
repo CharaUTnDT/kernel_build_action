@@ -13,18 +13,21 @@ jobs:
 
     steps:
       - name: Build Kernel
-        uses: dabao1955/kernel_build_action@main
+        uses: CharaUTnDT/kernel_build_action@main
         with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/Deivid21/android_kernel_motorola_sm6225
+          kernel-branch: lineage-22.2
+          config: vendor/ext_config/guam-default.config
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
-          ksu-version: main
-          android-version: 12
+          vendor: motorola
+          anykernel3: true
+          access-token: ${{ secrets.GHP_XXXXX }}
+          release: true
+          ksu-version: v0.9.5
+          android-version: 15
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
