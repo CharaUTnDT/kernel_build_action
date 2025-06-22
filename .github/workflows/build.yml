@@ -25,7 +25,6 @@ jobs:
           android-version: 15
           vendor: motorola
           anykernel3: true
-          release: true
           ksu-version: v0.9.5
           aosp-clang-version: r522817
           disable-lto: true
