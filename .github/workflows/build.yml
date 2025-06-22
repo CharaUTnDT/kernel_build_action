@@ -15,9 +15,9 @@ jobs:
       - name: Build Kernel
         uses: CharaUTnDT/kernel_build_action@main
         with:
-          kernel-url: https://github.com/CharaUTnDT/android_kernel_motorola_sm6225
+          kernel-url: https://github.com/Deivid21/android_kernel_motorola_sm6225
           kernel-branch: lineage-22.2
-          config: guam_defconfig
+          config: vendor/bengal-perf_defconfig vendor/debugfs.config vendor/ext_config/moto-bengal.config vendor/ext_config/guam-default.config
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
