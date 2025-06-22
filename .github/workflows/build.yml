@@ -22,7 +22,6 @@ jobs:
           aosp-gcc: false
           aosp-clang: true
           ksu: true
-          android-version: 15
           vendor: motorola
           anykernel3: true
           ksu-version: v0.9.5
