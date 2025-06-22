@@ -22,11 +22,11 @@ jobs:
           aosp-gcc: true
           aosp-clang: true
           ksu: true
+          android-version: 15
           vendor: motorola
           anykernel3: true
-          access-token: ${{ secrets.GHP_XXXXX }}
           release: true
           ksu-version: v0.9.5
-          android-version: 15
-          aosp-clang-version: r383902
+          aosp-clang-version: r522817
           disable-lto: true
+          bootimg-url: https://sourceforge.net/projects/evolution-x/files/guam/15/boot/boot.img/download
