@@ -19,7 +19,7 @@ jobs:
           kernel-branch: lineage-22.2
           config: vendor/ext_config/guam-default.config
           arch: arm64
-          aosp-gcc: true
+          aosp-gcc: false
           aosp-clang: true
           ksu: true
           android-version: 15
